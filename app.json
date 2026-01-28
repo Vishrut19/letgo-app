@@ -1,22 +1,27 @@
 {
   "expo": {
-    "name": "letgo-app",
-    "slug": "letgo-app",
+    "name": "LetGo",
+    "slug": "letgo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "letgoapp",
-    "userInterfaceStyle": "automatic",
+    "icon": "./assets/images/letgo-logo.png",
+    "backgroundColor": "#1C1E26",
+    "scheme": "letgo",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.vishrutagarwalla.letgo",
+      "supportsTablet": false,
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.vishrutagarwalla.letgo",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/letgo-logo.png",
+        "backgroundColor": "#1C1E26"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
@@ -33,9 +38,9 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#1c1e26",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#1c1e26"
           }
         }
       ]
@@ -43,6 +48,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "984a4dbb-e960-4b15-aa97-cc353fc8e368"
+      }
     }
   }
 }
