@@ -19,6 +19,7 @@
     },
     "android": {
       "package": "com.vishrutagarwalla.letgo",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/letgo-logo.png",
         "backgroundColor": "#1C1E26"
