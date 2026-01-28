@@ -82,10 +82,10 @@ export default function History() {
                 contentContainerStyle={{ paddingBottom: 40 }}
                 showsVerticalScrollIndicator={false}
                 ListEmptyComponent={
-                    <View className="items-center justify-center mt-32 opacity-50 px-10">
-                        <BookOpen size={48} color="#2A2D38" weight="light" />
-                        <Text className="text-dim mt-6 text-center text-lg">No entries yet.</Text>
-                        <Text className="text-dim/60 text-sm mt-2 text-center leading-5">Start writing to capture your thoughts.</Text>
+                    <View className="items-center justify-center mt-32 px-10">
+                        <BookOpen size={48} color="#6C7BFF" weight="light" />
+                        <Text style={{ color: '#ECECF1' }} className="mt-6 text-center text-lg font-medium">No entries yet.</Text>
+                        <Text style={{ color: '#9A9CAA' }} className="text-sm mt-2 text-center leading-5">Start writing to capture your thoughts.</Text>
                     </View>
                 }
                 refreshControl={
