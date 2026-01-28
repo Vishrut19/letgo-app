@@ -42,8 +42,8 @@ export default function Read() {
                 </View>
 
                 <View className="mt-8 mb-12 items-center">
-                    <Text className="text-secondary text-sm font-medium mb-1">Written earlier</Text>
-                    <Text className="text-dim text-xs">Subtle reminder that this moment has passed.</Text>
+                    <Text className="text-primary text-sm font-medium mb-1">Written earlier</Text>
+                    <Text className="text-secondary text-xs">Subtle reminder that this moment has passed.</Text>
                 </View>
             </ScrollView>
         </LinearGradient>

@@ -1,8 +1,8 @@
 import { LinearGradient } from "expo-linear-gradient";
 import { Link, useRouter } from "expo-router";
-import { ArrowRight, MoonStars } from "phosphor-react-native";
+import { ArrowRight } from "phosphor-react-native";
 import React from "react";
-import { StatusBar, Text, TouchableOpacity, View } from "react-native";
+import { Image, StatusBar, Text, TouchableOpacity, View } from "react-native";
 
 export default function Home() {
     const router = useRouter();
@@ -16,18 +16,11 @@ export default function Home() {
             >
                 <View className="flex-1 justify-center items-center w-full px-8">
                     <View className="items-center mb-16 space-y-4">
-                        <View
-                            className="bg-white/5 p-6 rounded-full border border-white/10 mb-6"
-                            style={{
-                                shadowColor: "#6C7BFF",
-                                shadowOffset: { width: 0, height: 10 },
-                                shadowOpacity: 0.2,
-                                shadowRadius: 20,
-                                elevation: 10
-                            }}
-                        >
-                            <MoonStars size={48} color="#6C7BFF" weight="light" />
-                        </View>
+                        <Image
+                            source={require("../assets/images/letgo-logo.png")}
+                            className="w-64 h-64 mb-6 rounded-3xl"
+                            resizeMode="contain"
+                        />
                         <Text className="text-5xl font-bold text-primary tracking-tight text-center">
                             LetGo
                         </Text>

@@ -1,7 +1,7 @@
 import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import { X } from "phosphor-react-native";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Alert, KeyboardAvoidingView, Platform, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { saveEntry } from "../lib/storage";
 
@@ -9,6 +9,15 @@ export default function Write() {
     const router = useRouter();
     const [text, setText] = useState("");
     const [isSaving, setIsSaving] = useState(false);
+    const inputRef = useRef<TextInput>(null);
+
+    useEffect(() => {
+        // Focus the input after a short delay to ensure it works reliably
+        const timer = setTimeout(() => {
+            inputRef.current?.focus();
+        }, 100);
+        return () => clearTimeout(timer);
+    }, []);
 
     const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
 
@@ -61,6 +70,7 @@ export default function Write() {
                 {/* Input Area */}
                 <View className="flex-1 mt-4">
                     <TextInput
+                        ref={inputRef}
                         className="flex-1 text-primary text-xl leading-9"
                         placeholder="What feels heavy right now?"
                         placeholderTextColor="#6B7C95"
