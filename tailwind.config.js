@@ -4,6 +4,7 @@ module.exports = {
     "./app/**/*.{js,jsx,ts,tsx}",
     "./components/**/*.{js,jsx,ts,tsx}",
   ],
+  presets: [require("nativewind/preset")],
   theme: {
     extend: {
       colors: {
@@ -14,6 +15,9 @@ module.exports = {
         accent: "#6C7BFF",
         divider: "#2A2D38",
       },
+      fontFamily: {
+        sans: ["System"],
+      }
     },
   },
   plugins: [],
