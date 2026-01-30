@@ -21,7 +21,6 @@ expo-env.d.ts
 # Metro
 .metro-health-check*
 
-letgo-485917-478bbb571aa5.json
 
 # debug
 npm-debug.*
