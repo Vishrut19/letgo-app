@@ -1,3 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "uniwind";
+
+@theme {
+  --color-bg: #121318;
+  --color-surface: #1c1e26;
+  --color-primary: #ececf1;
+  --color-secondary: #9a9caa;
+  --color-accent: #6c7bff;
+  --color-divider: #2a2d38;
+
+  --font-family-sans: "System";
+}
